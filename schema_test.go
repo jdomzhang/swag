@@ -39,6 +39,8 @@ func TestTransToValidSchemeType(t *testing.T) {
 	assert.Equal(t, TransToValidSchemeType("bool"), "boolean")
 	assert.Equal(t, TransToValidSchemeType("string"), "string")
 	assert.Equal(t, TransToValidSchemeType("NullInt64"), "integer")
+	assert.Equal(t, TransToValidSchemeType("sql.NullInt64"), "integer")
+	assert.Equal(t, TransToValidSchemeType("orm.NullInt64"), "integer")
 
 	// should accept any type, due to user defined types
 	assert.NotPanics(t, func() {

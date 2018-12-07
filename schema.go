@@ -31,7 +31,9 @@ func TransToValidSchemeType(typeName string) string {
 		return "integer"
 	case "uint32", "int32", "rune":
 		return "integer"
-	case "uint64", "int64", "NullInt64":
+	case "uint64", "int64":
+		return "integer"
+	case "NullInt64", "sql.NullInt64", "orm.NullInt64":
 		return "integer"
 	case "float32", "float64":
 		return "number"
