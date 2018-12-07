@@ -31,7 +31,7 @@ func TransToValidSchemeType(typeName string) string {
 		return "integer"
 	case "uint32", "int32", "rune":
 		return "integer"
-	case "uint64", "int64":
+	case "uint64", "int64", "NullInt64":
 		return "integer"
 	case "float32", "float64":
 		return "number"
@@ -59,6 +59,7 @@ func IsGolangPrimitiveType(typeName string) bool {
 		"rune",
 		"uint64",
 		"int64",
+		"NullInt64",
 		"float32",
 		"float64",
 		"bool",
