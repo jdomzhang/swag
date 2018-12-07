@@ -62,6 +62,8 @@ func IsGolangPrimitiveType(typeName string) bool {
 		"uint64",
 		"int64",
 		"NullInt64",
+		"orm.NullInt64",
+		"sql.NullInt64",
 		"float32",
 		"float64",
 		"bool",

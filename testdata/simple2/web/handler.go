@@ -1,10 +1,10 @@
 package web
 
 import (
-	"database/sql"
 	"math/big"
 	"time"
 
+	"github.com/jdomzhang/swag/testdata/simple2/orm"
 	uuid "github.com/satori/go.uuid"
 	"github.com/shopspring/decimal"
 )
@@ -35,7 +35,7 @@ type Pet struct {
 	Decimal         decimal.Decimal
 	customString    CustomString
 	customStringArr []CustomString
-	NullInt         sql.NullInt64 `swaggertype:"integer"`
+	NullInt         orm.NullInt64 `swaggertype:"integer"`
 	Coeffs          []big.Float   `swaggertype:"array,number"`
 }
 

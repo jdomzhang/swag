@@ -42,6 +42,8 @@ func convertFromSpecificToPrimitive(typeName string) (string, error) {
 		return "string", nil
 	case "DECIMAL":
 		return "number", nil
+	case "NULLINT64":
+		return "number", nil
 	}
 	return "", ErrFailedConvertPrimitiveType
 }
