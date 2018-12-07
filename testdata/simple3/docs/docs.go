@@ -8,7 +8,7 @@ import (
 	"bytes"
 
 	"github.com/alecthomas/template"
-	"github.com/swaggo/swag"
+	"github.com/jdomzhang/swag"
 )
 
 var doc = `{

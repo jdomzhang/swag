@@ -11,3 +11,7 @@ cover.out
 
 # Etc
 .DS_Store
+
+# Executable file
+swag
+swag.exe
