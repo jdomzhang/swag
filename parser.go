@@ -971,6 +971,9 @@ func defineTypeOfExample(schemaType, arrayType, exampleValue string) interface{}
 			result = append(result, defineTypeOfExample(arrayType, "", value))
 		}
 		return result
+	case "object":
+		v := exampleValue
+		return v
 	default:
 		panic(fmt.Errorf("%s is unsupported type in example value", schemaType))
 	}
